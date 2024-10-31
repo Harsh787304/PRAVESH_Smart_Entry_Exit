@@ -1,4 +1,5 @@
 ⭐IDEA:
+
 ➤The idea is to use the Arduino Cloud Platform for programming and monitor the student details. A RFID scanner will detect rfid cards, and upon detection the details of the students will be updated into the database. This setup will be installed at both the entry/exit points of the area. Whenever a person crosses the RFID sensor at the time of exit/entry, the count will be decremented/incremented.
 ➤RFID tags will be distributed among the students, and a RFID scanner i.e. our module will be placed at the entry/exit gates. The rfid scanner will detect a person has tapped his rfid card and on tap the system automatically fills the time, date, Name, Roll Number, Room Number and other details. On tap, a Form would also be sent on mail. The user has to fill it for the purpose of visit.
 ➤The main microcontroller board we chose for this project is the Arduino UNO R4 WiFi. Additionally, the built-in ESP32 will connect to a hotspot, providing internet access to the device.
@@ -42,7 +43,7 @@ Hence, we believe that PRAVESH will bring a revolution in IIIT Nagpur and will s
  
 ➤**Completion and Reset:** After the UID is successfully sent, the system deactivates the blue LED and buzzer and reactivates the green LED, readying the system for the next scan. The RFID reader halts communication with the card to conserve power until the next tag is detected.
  
-➤**Email functionality: **During the Data Transmission to Server step , the uid is also matched to the email of respective person and an form is sent to the registered email id of the person with the reason for visit and return time estimate thing , after the user fills that and submits the form , it automatically updates at the database .
+➤**Email functionality:** During the Data Transmission to Server step , the uid is also matched to the email of respective person and an form is sent to the registered email id of the person with the reason for visit and return time estimate thing , after the user fills that and submits the form , it automatically updates at the database .
  
 ➤**Deadline Mail:** If till before 1hr of the user defined deadline time , the person is not inside campus , a deadline mail is sent to the persons mail id saying that deadline time is reaching and only 1 hr left , you have to be in a hurry for campus.
 Delay and Repeat: A short delay prevents the system from reading the same card multiple times too quickly. The system then loops back to check for Wi-Fi status and new RFID tags, maintaining continuous operation.
